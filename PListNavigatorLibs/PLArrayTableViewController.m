@@ -69,7 +69,7 @@
         return;
     }
     
-    nextViewController.title = [NSString stringWithFormat:@"item %d",indexPath.row];
+    nextViewController.title = [NSString stringWithFormat:@"item %ld",(long)indexPath.row];
     [self.navigationController pushViewController:nextViewController animated:YES];
 }
 
